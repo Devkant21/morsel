@@ -1,25 +1,20 @@
 import "./index.css";
-import Navbar from "./components/Navbar.jsx";
+import { Navbar } from "./components/Navbar";
 import Hero from "./components/Hero";
-import Card from "./components/Card";
+import RestaurantCard from "./components/RestaurantCard";
 import Footer from "./components/Footer";
-import { resList } from "./utils/data";
+import Body from "./components/Body";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <div>
-        {resList.map((restaurant, index) => (
-          <Card key={index} resList={restaurant} />
-        ))}
-
-      </div>
+      <Body />
+      <RestaurantCard />
       <Footer />
     </div>
   )
-
 }
 
 export default App;

@@ -6,7 +6,6 @@ const Footer = () => {
                 <li className="cursor-pointer font-extralight p-6 m-5 text-white text-4xl">Follow us on:</li>
                 <ul className="flex justify-between space-x-5 text-3xl text-white p-6 m-5">
                     <li className="cursor-pointer font-extralight">@2023 All Right reserved</li>
-
                 </ul>
             </ul>
         </div>
