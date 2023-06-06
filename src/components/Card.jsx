@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const Card = () => {
-    const [info, setInfo] = useState("")
+    const [info, setInfo] = useState("0")
     return (
         <div className="grid grid-cols-4 gap-4 p-4 m-4">
             <div className="card rounded-xl">
