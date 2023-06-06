@@ -1577,7 +1577,7 @@ const resList = {
             "subtype": "basic"
         }
     ],
-    "totalRestaurants": 1440
+    // "totalRestaurants": 1440
 }
 
 export default resList

@@ -1,6 +1,6 @@
 import { resList } from "../utils/data";
 const Card = (props) => {
-    const { resList } = props;
+    const { resList.data.name, resList.data.cuisine, resList.data.costForTwoString } = props;
     return (
         <div className="grid grid-cols-4 gap-4 p-4 m-4">
             <div className="card rounded-xl">
@@ -12,7 +12,7 @@ const Card = (props) => {
             <div>
                 {
                     resList.map((restaurant, index) => (
-                        <Card key={restaurant.data.id} resList={restaurant} />
+                        <Card key={index} resList={restaurant} />
                     ))}
 
             </div>
